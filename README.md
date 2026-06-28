@@ -173,6 +173,20 @@ npx serve .
 
 打開 `http://localhost:8080`
 
+### Cloudflare Workers 部署
+```bash
+# 安裝 Wrangler（一次性）
+npm install -D wrangler@latest
+
+# 登入 Cloudflare（一次性）
+npx wrangler login
+
+# 部署到 Workers
+npx wrangler deploy
+```
+
+部署成功後，Wrangler 會輸出 `*.workers.dev` 網址可直接訪問。
+
 ### Replit 部署
 1. 打開 [replit.com](https://replit.com)
 2. 點「+ Create Repl」→「Import from GitHub」
